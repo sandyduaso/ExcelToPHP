@@ -1,0 +1,27 @@
+/** PAALALA */
+	Kung mag "IMPORT" ka ng records na may data na 2,000 or higher pa need mo i set up sa 'PHP.ini' sa may XAMPP ang mga ito
+		1. Search for "max_input_vars"
+		2. Tanggalin yung symbol na to ";" sa unahan ng "max_input_vars"
+		3. Taasan yung value nya naka default sya ng 1,000 gawin mo sya kahit 2,500 or 3,000
+		4. Search for "max_execution_time"
+		5. Baguhin yung default na "30" gawin "300"
+		6. Save and restart apache.
+	** Kaya binago rin yung execution time kasi marami kang data na pinapasa so kapag na reach nya execution time na 30 magkakaroon na ng error at hindi halos makukuwa yung data kaya ginawa natin na 300 para lahat ng data na iniimport is makuwa. **
+
+	# FILE PATH for PHP.ini
+	C:\xampp\php
+	tas hanapin lang yung PHP.ini/php.ini
+
+	Another way is 
+	Go to XAMPP Control Panel
+	Under APACHE sa ACTIONS click Config button
+	Then click PHP(php.ini)
+
+	Always restart the apache once na may binago sa PHP.ini para ma apply yung changes.
+
+	Happy Coding :)
+
+	/** Excel File */
+	May excel file sa uploades folder pwede mo sya subukan 
+	employee2018 may 5,000 records.
+	employees may 100 records naman.
